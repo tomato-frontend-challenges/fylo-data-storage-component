@@ -1,0 +1,18 @@
+:root {
+  --border-radius: 10px;
+
+  /* Primary */
+  --color-gradient: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+  /* Neutral */
+  --color-white: hsl(255, 100%, 100%);
+  --color-pale-blue: hsl(243, 100%, 93%);
+  --color-grayish-blue: hsl(229, 7%, 55%);
+  --color-dark-blue: hsl(228, 56%, 26%);
+  --color-very-dark-blue: hsl(229, 57%, 11%);
+  
+  /* Fonts */
+  --font-family: "Raleway", sans-serif;
+  --font-weight-medium: 400;
+  --font-weight-heavy: 700;
+}
