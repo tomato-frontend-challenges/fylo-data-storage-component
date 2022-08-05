@@ -1,8 +1,6 @@
 :root {
-  --border-radius: 10px;
-
   /* Primary */
-  --color-gradient: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  --color-gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 
   /* Neutral */
   --color-white: hsl(255, 100%, 100%);

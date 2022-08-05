@@ -14,15 +14,44 @@
 
 <body>
   <main class="main">
-
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-        <a href="https://github.com/VeryEvilTomato">Orlando Guevara</a>.
-      </p>
-    </footer>
+    <div class="container">
+      <header class="nav">
+        <img class="nav__logo" src="./images/logo.svg" alt="">
+        <ul class="nav__links-container">
+          <li class="nav__link">
+            <img class="nav__link-image" src="./images/icon-document.svg" alt="">
+          </li>
+          <li class="nav__link">
+            <img class="nav__link-image" src="./images/icon-folder.svg" alt="">
+          </li>
+          <li class="nav__link">
+            <img class="nav__link-image" src="./images/icon-upload.svg" alt="">
+          </li>
+        </ul>
+      </header>
+      <article class="indicator">
+        <div class="indicator__tooltip">
+          <b class="indicator__tooltip-amount">185</b> GB LEFT
+        </div>
+        <p class="indicator__text">You've used <b>815 GB</b> of your storage</p>
+        <div class="indicator__bar-container">
+          <div class="indicator__bar"></div>
+        </div>
+        <div class="indicator__limits">
+          <div class="indicator__limit-low">0 GB</div>
+          <div class="indicator__limit-high">1000 GB</div>
+        </div>
+      </article>
+    </div>
   </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/VeryEvilTomato">Orlando Guevara</a>.
+    </p>
+  </footer>
 </body>
 
 </html>

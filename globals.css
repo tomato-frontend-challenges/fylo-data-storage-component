@@ -6,6 +6,7 @@
 
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -16,27 +17,28 @@ html, body {
   height: 100%;
   width: 100%;
 
-  font-size: 10px;
+  font-size: 14px;
 
   font-family: var(--font-family);
 }
 
 body {
-  display: grid;
-  place-items: center center;
-
-  padding: 20px;
-
   box-sizing: border-box;
 
   background-color: var(--color-very-dark-blue);
+  background-image: url("./images/bg-mobile.png");
+  background-size: cover;
 
   color: var(--color-white);
 }
 
-.main > * + * {
-  margin-top: 2rem;
-  margin-left: 0;
+@media screen and (min-width: 875px) {
+  body {
+    background-image: url("./images/bg-desktop.png");
+    background-position: bottom center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+  }
 }
 
 .attribution {
@@ -44,20 +46,50 @@ body {
 }
 
 .main {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  width: clamp(20px, 100%, 375px);
+  width: 100%;
+  height: 90%;
+  padding: 2.5rem;
 }
 
-@media screen and (min-width: 675px) {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.container > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 576px) {
   .main {
     flex-direction: row;
+    align-items: center;
   }
 
-  .main > * + * {
-    margin-top: 0;
-    margin-left: 3rem;
+  .container {
+    flex-direction: row;
+    align-items: flex-end;
   }
+
+  .container > *:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution {
+  margin: 1rem 2rem;
 }
